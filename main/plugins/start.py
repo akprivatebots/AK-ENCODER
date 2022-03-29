@@ -43,12 +43,12 @@ async def info(event):
 async def notice(event):
     await event.answer(f'{spam_notice}', alert=True)
     
-@Drone.on(events.callbackquery.CallbackQuery(data="source"))
+@Drone.on(events.callbackquery.CallbackQuery(data="channel"))
 async def source(event):
     await event.edit(source_text,
                     buttons=[[
-                         Button.url("FOR PERSONAL USE", url="https://github.com/vasusen-code/videoconvertor/tree/main"),
-                         Button.url("FOR YOUR CHANNEL ", url="https://github.com/vasusen-code/videoconvertor/")]])
+                         Button.url("MOVIES & SERIES CHANNEL", url="https://t.me/MOVIEFINATICSS"),
+                         Button.url("TORRENT LEECH GROUP", url="https://t.me/AKLEECHZONE")]])
                          
                     
 @Drone.on(events.callbackquery.CallbackQuery(data="help"))
